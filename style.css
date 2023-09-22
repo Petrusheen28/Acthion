@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Annie+Use+Your+Telescope&family=Artifika&family=Atomic+Age&family=Barrio&family=Belleza&family=Benne&family=Bruno+Ace+SC&family=Cormorant:wght@300&family=Crafty+Girls&family=EB+Garamond&family=Federo&family=Fresca&family=Genos:ital@1&family=Geo&family=Glass+Antiqua&family=IM+Fell+DW+Pica+SC&family=IM+Fell+French+Canon+SC&family=Indie+Flower&family=Irish+Grover&family=Kotta+One&family=Kufam&family=Lacquer&family=Macondo&family=Major+Mono+Display&family=Marck+Script&family=Megrim&family=Play&family=Playfair:opsz@5..1200&family=Sedgwick+Ave&family=Share&family=Sulphur+Point&family=Trade+Winds&family=Ubuntu+Mono&family=VT323&family=Zilla+Slab+Highlight&display=swap');
+
+html{
+    scroll-behavior: smooth;
+} 
+
+a, #search,  p, span, h3, #collection{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+body{
+    margin: 0px;
+    height: 100vh;
+}
+
+header {
+    background-color:#ffffff;
+}
+
+#links{
+    background-color: rgb(185, 172, 172);
+    padding: 8px;
+}
+
+
+#links a:hover{
+    color: rgb(244, 238, 238);
+}
+
+#top hr{
+margin: 0;
+}
+
+#top-flex{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+    margin-left: 5px;
+    margin: 10px;
+}
+
+
+#search{
+    padding: 7px;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 5px 5px 10px grey;
+}
+
+#search:hover{
+    border-color: black;
+}
+
+
+#search:focus{
+    outline: none;
+    border-color: rgb(83, 83, 227);
+}
+
+.icons{
+    transform: translateY(6px);
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 15px;
+    transition: 300ms;
+}
+
+.hover div{
+    margin-right: 10px;
+    display: inline;
+    cursor: pointer;
+    transition-duration: 300ms;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid white;
+    
+}
+
+.hover div:hover, #clothes a:hover{
+    border-bottom: 2px solid black;
+    
+}
+
+h1 { 
+    font-family: 'Sedgwick Ave', cursive;
+    text-align: center;
+    color:black;
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+ }
+
+
+ .shadow {
+    text-shadow: 0px 3px 12px grey;
+}
+
+
+
+#clothes{
+    display: flex;
+    justify-content: center;
+}
+
+#clothes a{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid white;
+}
+
+#background-center{
+    display: flex;
+    justify-content: center;
+}
+
+#background {
+    background-image: url(./Pictures/remy_loz-46OfxXrOs_A-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 600px;
+    width: 1500px;
+    opacity: 0.9;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#slogan{
+    font-size: 3rem;
+    color: white;
+}
+
+#collection{
+    padding: 15px;
+    font-size: 18px;
+    width: 220px;
+    cursor: pointer;
+    border: none;
+    transition: 250ms;
+    border-radius: 3px;
+}
+
+#collection:hover{
+    background-color: black;
+    color: white;
+}
+
+#left-arrow{
+    position: absolute;
+    left: 1%;
+    bottom: 50%;
+}
+
+#right-arrow{
+    position: absolute;
+    right: 1%;
+    bottom: 50%;
+}
+
+.arrows{
+    transition: 350ms ease-out;
+}
+
+.arrows:hover{
+    fill: black;
+}
+
+#circles{
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%,0 );
+    cursor: pointer;
+}
+
+#circles svg{
+    width: 40px;
+    transform: scale(1.5);
+}
+
+#overlay p{
+    font-size: 1.2rem;
+    max-width: 1520px;
+    text-align: center;
+}
+
+#new-product{
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 50px;
+    text-decoration: underline;
+    
+}
+
+
+#products{  
+    margin-left: 40px;
+    margin-bottom: 120px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.product{
+    position: relative;
+    height: 500px;
+    width: 300px;
+}
+
+.images{
+    filter: brightness(120%) sepia(10%);
+    cursor: pointer;
+}
+
+.image2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; 
+    transition: opacity 0.3s; 
+    z-index: 1; 
+}
+
+.image2:hover{
+    opacity: 1;
+}
+
+.product-des{
+    display: flex;
+    flex-direction: column;
+    line-height: 22px;
+}
+
+#new{
+    color: rgb(82, 135, 234);
+    cursor: pointer;
+    width: 30px;
+}
+
+
+#contact{
+    span{
+        text-decoration: underline;
+    }
+}
+
+#contact span:hover{
+    color: blue;
+}
+
+#foot{
+    margin:5px;
+    font-size: 18px;
+}
+
+#foot a:hover{
+    color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
